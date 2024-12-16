@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Trip - Travelo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/travelo-logo.png" alt="Travelo Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="post-trip.html">Post a Trip</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="post-trip-section">
+    <div class="container">
+      <h2>Post a Trip</h2>
+      <form id="post-trip-form">
+        <label for="title">Trip Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter trip title" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter trip location" required>
+
+        <label for="budget">Budget:</label>
+        <select id="budget" name="budget">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Describe your trip" rows="4"></textarea>
+
+        <button class="btn" type="submit">Post Trip</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Travelo. Designed by Sujal Shashank.</p>
+  </footer>
+
+  <script src="post-trip.js"></script>
+
+</body>
+</html>

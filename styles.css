@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+header {
+  background: #0077cc;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  float: right;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  align-items:center;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-banner {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-banner .banner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-banner h1 {
+  font-size: 36px;
+}
+
+.hero-banner p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.hero-banner .banner-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00509e;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #003d80;
+}
+
+.why-travelo {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.why-travelo h2 {
+  margin-bottom: 30px;
+}
+
+.why-travelo-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative; /* Position the card for absolute positioning of the background */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better contrast */
+  border-radius: 8px;
+}
+
+.why-travelo-cards .card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 20px;
+}
+
+.why-travelo-cards .card img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.popular-destinations {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.popular-destinations h2 {
+  margin-bottom: 20px;
+}
+
+.destinations-grid {
+  display:inline-flex;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.destination-card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form .btn {
+  width: 100%;
+}
+
+.filter-section {
+  background: #eef;
+  padding: 20px;
+  text-align: left;
+}
+
+.trips-grid {
+  padding: 40px 20px;
+}
+
+.trips-grid .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}

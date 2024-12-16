@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Trips - Travelo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        Travelo
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="post-trip.html">Post a Trip</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="banner-container">
+      <h1>Discover Amazing Trips</h1>
+      <p>Explore group trips or create your own. Adventure awaits!</p>
+    </div>
+    <img src="images/tripsbanner.jpeg" alt="Trips Banner" class="banner-image">
+  </section>
+
+  <section class="filter-section">
+    <div class="container">
+      <h2>Filter Trips</h2>
+      <form id="filter-form">
+        <label for="budget">Budget:</label>
+        <select id="budget" name="budget">
+          <option value="any">Any</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location...">
+
+        <button class="btn" type="button" id="apply-filters">Apply Filters</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="trips-grid">
+    <div class="container" id="trip-results">
+      <h2>Available Trips</h2>
+      <div class="grid-container">
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Travelo. Designed by Sujal Shashank.</p>
+  </footer>
+
+  <script src="trips.js"></script>
+
+</body>
+</html>
